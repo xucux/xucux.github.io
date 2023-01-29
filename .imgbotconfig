@@ -4,6 +4,8 @@
         //"*.jpg",                   // ignore by extension
         //"image1.png",              // ignore by filename
         "public/special_images/*", // ignore by folderpath
+        "themes/*",
+        "doc/*"
     ],
     "aggressiveCompression": "false", // 是否有损压缩 true|false
     "compressWiki": "true", // true|false

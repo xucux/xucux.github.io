@@ -2,42 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://xucux.github.io/post/hello-world/</loc>
-    
-    <lastmod>2023-01-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xucux.github.io/about/index.html</loc>
-    
-    <lastmod>2023-01-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xucux.github.io/categories/index.html</loc>
-    
-    <lastmod>2023-01-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xucux.github.io/friends/index.html</loc>
-    
-    <lastmod>2023-01-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://xucux.github.io/list/index.html</loc>
     
     <lastmod>2023-01-29</lastmod>
@@ -66,6 +30,42 @@
   
   <url>
     <loc>https://xucux.github.io/page/messages/index.html</loc>
+    
+    <lastmod>2023-01-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xucux.github.io/post/hello-world/</loc>
+    
+    <lastmod>2023-01-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xucux.github.io/about/index.html</loc>
+    
+    <lastmod>2023-01-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xucux.github.io/categories/index.html</loc>
+    
+    <lastmod>2023-01-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xucux.github.io/friends/index.html</loc>
     
     <lastmod>2023-01-29</lastmod>
     
