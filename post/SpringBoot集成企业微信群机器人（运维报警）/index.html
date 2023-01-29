@@ -5,8 +5,8 @@
   <meta name="Volantis" content="6.0.0-alpha.1">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://xucux.github.io/"/>
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://xucux.github.io/post/springboot集成企业微信群机器人（运维报警）/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -36,19 +36,24 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="Xucux's Blog" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>Xucux's Blog</title>
-  <meta name="keywords" content="Java,Web,Vue,SpringBoot,SpringCloud,Golang,Redis,MySQL,前端,后端">
-  <meta desc name="description" content="一个记录编程知识的小站！ - xucux - Xucux's Blog">
+  <title>归档 - Xucux's Blog</title>
+  <meta name="keywords" content="Java,企业微信,SpringBoot,报警,Java,Web,Vue,SpringBoot,SpringCloud,Golang,Redis,MySQL,前端,后端">
+  <meta desc name="description" content="之前有集成过钉钉群机器人🤖报警，这次主要是SpringBoot集成企业微信群机器人报警，主要使用两种方式调用企业微信的HttpApi，一种为Forest，一种为RestTemplate - xucux - Xucux's Blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="Xucux&#39;s Blog">
-<meta property="og:url" content="https://xucux.github.io/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SpringBoot集成企业微信群机器人（运维报警）">
+<meta property="og:url" content="https://xucux.github.io/post/SpringBoot%E9%9B%86%E6%88%90%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E7%BE%A4%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88%E8%BF%90%E7%BB%B4%E6%8A%A5%E8%AD%A6%EF%BC%89/index.html">
 <meta property="og:site_name" content="Xucux&#39;s Blog">
-<meta property="og:description" content="一个记录编程知识的小站！">
+<meta property="og:description" content="之前有集成过钉钉群机器人🤖报警，这次主要是SpringBoot集成企业微信群机器人报警，主要使用两种方式调用企业微信的HttpApi，一种为Forest，一种为RestTemplate">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2023-01-29T09:40:50.000Z">
+<meta property="article:modified_time" content="2023-01-29T10:01:54.047Z">
 <meta property="article:author" content="xucux">
-<meta property="article:tag" content="Java,Web,Vue,SpringBoot,SpringCloud,Golang,Redis,MySQL,前端,后端">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="企业微信">
+<meta property="article:tag" content="SpringBoot">
+<meta property="article:tag" content="报警">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2233,7 +2238,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2305,7 +2310,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin begin-->
     
     <!-- Custom Files bodyBegin end-->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2877,103 +2882,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div id="l_body">
       <div id="l_cover">
   
-    
-      <div class="cover-wrapper  featured" id='full'>
-        
-  <div class='cover-bg lazyload placeholder' data-bg="/images/wallpaper/ChMlV17p.jpg"></div>
-
-<div class='cover-body'>
-  <div class='top'>
-    
-    
-      <p class="title">RuntimeException()</p>
-    
-    
-      <p class="subtitle">夏虫不可语冰</p>
-    
-  </div>
-  <div class='bottom'>
-    <div class='menu navigation'>
-      <div class='list-h'>
-        
-          
-            <a href="/"
-              
-              
-              active-action="action-home">
-              <img src='https://gcore.jsdelivr.net/gh/xucux/assets@latest/blog/svg/u1f3e1.svg'><p>主页</p>
-            </a>
-          
-            <a href="/categories/"
-              
-              
-              active-action="action-categories">
-              <img src='https://gcore.jsdelivr.net/gh/xucux/assets@latest/blog/svg/u1f5c2.svg'><p>分类</p>
-            </a>
-          
-            <a href="/tags/"
-              
-              
-              active-action="action-tags">
-              <img src='https://gcore.jsdelivr.net/gh/xucux/assets@latest/blog/svg/u1f3f7.svg'><p>标签</p>
-            </a>
-          
-            <a href="/archives/"
-              
-              
-              active-action="action-archives">
-              <img src='https://gcore.jsdelivr.net/gh/xucux/assets@latest/blog/svg/u1f4d1.svg'><p>归档</p>
-            </a>
-          
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-        <div id="scroll-down"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
-      </div>
-    
-  
 </div>
 
       <div id="safearea">
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="https://xucux.github.io/post/SpringBoot集成企业微信群机器人（运维报警）/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Xucux's Blog">
@@ -2983,121 +2898,273 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="一个记录编程知识的小站！">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/post/SpringBoot%E9%9B%86%E6%88%90%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E7%BE%A4%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88%E8%BF%90%E7%BB%B4%E6%8A%A5%E8%AD%A6%EF%BC%89/"  itemprop="url">
+    
+    
+      <h1 class="title" itemprop="name headline">
         SpringBoot集成企业微信群机器人（运维报警）
-      </a>
-    </h2>
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' target="_blank" href="https://github.com/xucux" rel="nofollow noopener">
+    <img itemprop="image" src="https://tse1-mm.cn.bing.net/th?id=OIP.Yax4wLzIFbcBVUa_RsKywQHaLH&w=80&h=80&c=8&rs=1&qlt=90&dpr=2&pid=3.1&rm=2" class="lazyload" data-srcset="https://tse1-mm.cn.bing.net/th?id=OIP.Yax4wLzIFbcBVUa_RsKywQHaLH&w=80&h=80&c=8&rs=1&qlt=90&dpr=2&pid=3.1&rm=2" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Xucux</p>
+  </a>
+</div>
+
+          
+        
+          
+            
   
-  <div class='md article-desc' itemprop="articleBody">
+  
+  
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/Java/">Java</a>
     
-      <p>之前有集成过钉钉群机器人🤖报警，这次主要是SpringBoot集成企业微信群机器人报警，主要使用两种方式调用企业微信的HttpApi，一种为Forest，一种为RestTemplate</p>
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/Java/" itemprop="url"><span itemprop="name">Java</span></a>
+      </span>
     
   </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-01-29T17:40:50+08:00">2023-01-29</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Java/">Java</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/Java/" itemprop="url"><span itemprop="name">Java</span></a>
-            </span>
+
+
+
           
         
-      </div>
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-01-29T09:40:50+00:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2023年1月29日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-        <div>
-          <a class='readmore' href='/post/SpringBoot%E9%9B%86%E6%88%90%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E7%BE%A4%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88%E8%BF%90%E7%BB%B4%E6%8A%A5%E8%AD%A6%EF%BC%89/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+      <span id="busuanzi_value_page_pv">
+        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span>
+        
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>之前有集成过钉钉群机器人🤖报警，这次主要是SpringBoot集成企业微信群机器人报警，主要使用两种方式调用企业微信的HttpApi，一种为Forest，一种为RestTemplate</p>
+<span id="more"></span>
+
+<blockquote>
+<p><strong>相关文档：</strong></p>
+<p><a target="_blank" rel="noopener" href="https://work.weixin.qq.com/api/doc/90000/90136/91770">企业微信群机器人配置说明</a></p>
+</blockquote>
+<h2 id="1-配置参数"><a href="#1-配置参数" class="headerlink" title="1.配置参数"></a>1.配置参数</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> lombok.Getter;</span><br><span class="line"><span class="keyword">import</span> lombok.Setter;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.context.properties.ConfigurationProperties;</span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Component;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@descriptions</span>: 配置参数</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span>: xucux</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="meta">@Getter</span></span><br><span class="line"><span class="meta">@Setter</span></span><br><span class="line"><span class="meta">@ConfigurationProperties(prefix = &quot;notice&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">NoticeProperties</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String wechatKey;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> List&lt;String&gt; phoneList;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>这个key的获取方式：<a target="_blank" rel="noopener" href="https://work.weixin.qq.com/api/doc/90000/90136/91770">群机器人配置说明</a></p>
+<p>yaml文件配置数据：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">notice:</span></span><br><span class="line">  <span class="comment">####### 企业微信群机器人key</span></span><br><span class="line">  <span class="attr">wechat-key:</span> <span class="string">xxxxxxxxx-xxx-xxx-xxxx-xxxxxxxxxx</span></span><br><span class="line">  <span class="comment">####### 需要@的群成员手机号</span></span><br><span class="line">  <span class="attr">phone-list:</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="2-Forest的Http客户端配置"><a href="#2-Forest的Http客户端配置" class="headerlink" title="2.Forest的Http客户端配置"></a>2.Forest的Http客户端配置</h2><h3 id="使用Forest"><a href="#使用Forest" class="headerlink" title="使用Forest"></a>使用Forest</h3><p>这里用的Forest ，感觉还挺强大灵活 <a target="_blank" rel="noopener" href="https://forest.dtflyx.com/">官方文档</a>，如果你喜欢使用httpClient或者okHttp建议你看看forest ；如果你更喜欢RestTemplate，那就使用RestTemplate。</p>
+<h4 id="POM依赖"><a href="#POM依赖" class="headerlink" title="POM依赖"></a>POM依赖</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 轻量级HTTP客户端框架 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.dtflys.forest<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>forest-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.5.28<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="yaml文件配置"><a href="#yaml文件配置" class="headerlink" title="yaml文件配置"></a>yaml文件配置</h4><p>日志打开关闭请参考自己的业务需要</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 轻量级HTTP客户端框架forest</span></span><br><span class="line"><span class="attr">forest:</span></span><br><span class="line">  <span class="comment"># 配置底层API为 okhttp3</span></span><br><span class="line">  <span class="attr">backend:</span> <span class="string">okhttp3</span></span><br><span class="line">  <span class="comment"># 连接池最大连接数，默认值为500</span></span><br><span class="line">  <span class="attr">max-connections:</span> <span class="number">1000</span></span><br><span class="line">  <span class="comment"># 每个路由的最大连接数，默认值为500</span></span><br><span class="line">  <span class="attr">max-route-connections:</span> <span class="number">500</span></span><br><span class="line">  <span class="comment"># 请求超时时间，单位为毫秒, 默认值为3000</span></span><br><span class="line">  <span class="attr">timeout:</span> <span class="number">3000</span></span><br><span class="line">   <span class="comment"># 连接超时时间，单位为毫秒, 默认值为2000</span></span><br><span class="line">  <span class="attr">connect-timeout:</span> <span class="number">3000</span></span><br><span class="line">   <span class="comment"># 请求失败后重试次数，默认为0次不重试</span></span><br><span class="line">  <span class="attr">retry-count:</span> <span class="number">1</span></span><br><span class="line">   <span class="comment"># 单向验证的HTTPS的默认SSL协议，默认为SSLv3</span></span><br><span class="line">  <span class="attr">ssl-protocol:</span> <span class="string">SSLv3</span></span><br><span class="line">   <span class="comment"># 打开或关闭日志，默认为true</span></span><br><span class="line">  <span class="attr">logEnabled:</span> <span class="literal">true</span></span><br><span class="line">   <span class="comment"># 打开/关闭Forest请求日志（默认为 true）</span></span><br><span class="line">  <span class="attr">log-request:</span> <span class="literal">true</span></span><br><span class="line">   <span class="comment"># 打开/关闭Forest响应状态日志（默认为 true）</span></span><br><span class="line">  <span class="attr">log-response-status:</span> <span class="literal">true</span></span><br><span class="line">   <span class="comment"># 打开/关闭Forest响应内容日志（默认为 false）</span></span><br><span class="line">  <span class="attr">log-response-content:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="发送请求"><a href="#发送请求" class="headerlink" title="发送请求"></a>发送请求</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">NoticeClient</span> &#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 企业微信机器人 发送 https 请求</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> keyValue</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Post(</span></span><br><span class="line"><span class="meta">            url = &quot;https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=&#123;keyValue&#125;&quot;,</span></span><br><span class="line"><span class="meta">            headers = &#123;</span></span><br><span class="line"><span class="meta">                    &quot;Accept-Charset: utf-8&quot;,</span></span><br><span class="line"><span class="meta">                    &quot;Content-Type: application/json&quot;</span></span><br><span class="line"><span class="meta">            &#125;,</span></span><br><span class="line"><span class="meta">            dataType = &quot;json&quot;</span></span><br><span class="line"><span class="meta">    )</span></span><br><span class="line">    ForestResponse&lt;JsonObject&gt; <span class="title function_">weChatNotice</span><span class="params">(<span class="meta">@Var(&quot;keyValue&quot;)</span> String keyValue, <span class="meta">@JSONBody</span> Map&lt;String, Object&gt; body )</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="3-定义服务"><a href="#3-定义服务" class="headerlink" title="3.定义服务"></a>3.定义服务</h2><h3 id="3-1-接口"><a href="#3-1-接口" class="headerlink" title="3.1 接口"></a>3.1 接口</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@descriptions</span>: 消息通知接口</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span>: xucux</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">NoticeService</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 发送错误信息至群机器人</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> throwable</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> msg</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">sendError</span><span class="params">(Throwable throwable,String msg)</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 发送文本信息至群机器人</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> msg</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">sendByMd</span><span class="params">(String msg)</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 发送md至群机器人</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> msg 文本消息</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> isAtALL  是否@所有人 true是 false否</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">void</span> <span class="title function_">sendByText</span><span class="params">(String msg,<span class="type">boolean</span> isAtALL)</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-2-服务实现"><a href="#3-2-服务实现" class="headerlink" title="3.2 服务实现"></a>3.2 服务实现</h3><p>注意：这里的包名（com.github）填自己项目内的包名</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.dtflys.forest.http.ForestResponse;</span><br><span class="line"><span class="keyword">import</span> com.google.gson.JsonObject;</span><br><span class="line"><span class="keyword">import</span> lombok.extern.slf4j.Slf4j;</span><br><span class="line"><span class="keyword">import</span> org.apache.commons.collections4.CollectionUtils;</span><br><span class="line"><span class="keyword">import</span> org.apache.commons.lang3.StringUtils;</span><br><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Autowired;</span><br><span class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Value;</span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Service;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.ByteArrayOutputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.PrintStream;</span><br><span class="line"><span class="keyword">import</span> java.time.LocalDateTime;</span><br><span class="line"><span class="keyword">import</span> java.time.format.DateTimeFormatter;</span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.HashMap;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"><span class="keyword">import</span> java.util.regex.Matcher;</span><br><span class="line"><span class="keyword">import</span> java.util.regex.Pattern;</span><br><span class="line"><span class="keyword">import</span> java.util.stream.Collectors;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@descriptions</span>: 通知实现</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span>: xucux</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Service</span></span><br><span class="line"><span class="meta">@Slf4j</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">NoticeServiceImpl</span> <span class="keyword">implements</span> <span class="title class_">NoticeService</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Value(&quot;$&#123;spring.application.name&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String appName;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Value(&quot;$&#123;spring.profiles.active&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String env;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> NoticeClient noticeClient;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> NoticeProperties noticeProperties;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 发送错误信息至群机器人</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> throwable</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> msg</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">sendError</span><span class="params">(Throwable throwable, String msg)</span> &#123;</span><br><span class="line">        <span class="type">String</span> <span class="variable">errorClassName</span> <span class="operator">=</span> throwable.getClass().getSimpleName();</span><br><span class="line">        <span class="keyword">if</span> (StringUtils.isBlank(msg))&#123;</span><br><span class="line">            msg = throwable.getMessage() == <span class="literal">null</span> ? <span class="string">&quot;出现null值&quot;</span> : throwable.getMessage();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">ByteArrayOutputStream</span> <span class="variable">baos</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ByteArrayOutputStream</span>();</span><br><span class="line">        throwable.printStackTrace(<span class="keyword">new</span> <span class="title class_">PrintStream</span>(baos));</span><br><span class="line">        <span class="type">String</span> <span class="variable">bodyStr</span> <span class="operator">=</span> StringComUtils.limitStrNone(regexThrowableStr(baos.toString()),<span class="number">450</span>);</span><br><span class="line">        <span class="type">String</span> <span class="variable">md</span> <span class="operator">=</span> getMdByTemplate(appName, env, errorClassName, msg, bodyStr);</span><br><span class="line">        sendByMd(md);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 发送文本信息至群机器人</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> msg</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">sendByMd</span><span class="params">(String msg)</span> &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Map&lt;String, Object&gt; params = buildMdParams(msg);</span><br><span class="line">            ForestResponse&lt;JsonObject&gt; response = noticeClient.weChatNotice(noticeProperties.getWechatKey(), params);</span><br><span class="line">            log.debug(<span class="string">&quot;WeChatRobo-Send Error:&#123;&#125; Status:&#123;&#125;&quot;</span>,response.isError(),response.getStatusCode());</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            log.error(<span class="string">&quot;WeChatRobot-发送文本消息异常 body:&#123;&#125;&quot;</span>,msg,e);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 发送md至群机器人</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> msg</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">sendByText</span><span class="params">(String msg,<span class="type">boolean</span> isAtALL)</span> &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Map&lt;String, Object&gt; params = buildTextParams(msg,noticeProperties.getPhoneList(),isAtALL);</span><br><span class="line">            ForestResponse&lt;JsonObject&gt; response = noticeClient.weChatNotice(noticeProperties.getWechatKey(), params);</span><br><span class="line">            log.debug(<span class="string">&quot;WeChatRobo-Send Error:&#123;&#125; Status:&#123;&#125;&quot;</span>,response.isError(),response.getStatusCode());</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            log.error(<span class="string">&quot;WeChatRobot-发送文本消息异常 body:&#123;&#125;&quot;</span>,msg,e);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 构建发送文本消息格式的参数</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> phoneList @群用户</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> isAtALL  是否@所有人</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Map&lt;String,Object&gt; <span class="title function_">buildTextParams</span><span class="params">(String text, List&lt;String&gt; phoneList, <span class="type">boolean</span> isAtALL)</span>&#123;</span><br><span class="line">        Map&lt;String,Object&gt; params = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;&gt;();</span><br><span class="line">        Map&lt;String,Object&gt; data = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;&gt;();</span><br><span class="line">        data.put(<span class="string">&quot;content&quot;</span>,text);</span><br><span class="line">        <span class="keyword">if</span> (isAtALL)&#123;</span><br><span class="line">            phoneList.add(<span class="string">&quot;@all&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (CollectionUtils.isNotEmpty(phoneList))&#123;</span><br><span class="line">            data.put(<span class="string">&quot;mentioned_mobile_list&quot;</span>, phoneList);</span><br><span class="line">        &#125;</span><br><span class="line">        params.put(<span class="string">&quot;msgtype&quot;</span>,<span class="string">&quot;text&quot;</span>);</span><br><span class="line">        params.put(<span class="string">&quot;text&quot;</span>,data);</span><br><span class="line">        <span class="keyword">return</span> params;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 构建发送markdown消息格式的参数</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> md</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Map&lt;String,Object&gt; <span class="title function_">buildMdParams</span><span class="params">(String md)</span>&#123;</span><br><span class="line">        Map&lt;String,Object&gt; params = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;&gt;();</span><br><span class="line">        Map&lt;String,Object&gt; data = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;&gt;();</span><br><span class="line">        data.put(<span class="string">&quot;content&quot;</span>,md);</span><br><span class="line">        params.put(<span class="string">&quot;msgtype&quot;</span>,<span class="string">&quot;markdown&quot;</span>);</span><br><span class="line">        params.put(<span class="string">&quot;markdown&quot;</span>,data);</span><br><span class="line">        <span class="keyword">return</span> params;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String <span class="title function_">regexThrowableStr</span><span class="params">(String str)</span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">             <span class="comment">// 注意：这里的包名（com.github）填自己项目内的包名</span></span><br><span class="line">            <span class="type">String</span> <span class="variable">pattern</span> <span class="operator">=</span> <span class="string">&quot;(com)(\\.)(github)(.&#123;10,200&#125;)(\\))&quot;</span>;</span><br><span class="line">            <span class="type">Pattern</span> <span class="variable">r</span> <span class="operator">=</span> Pattern.compile(pattern);</span><br><span class="line">            Matcher m=r.matcher(str);</span><br><span class="line">            List&lt;String&gt; list = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">            <span class="keyword">while</span> (m.find()) &#123;</span><br><span class="line">                list.add(m.group());</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (CollectionUtils.isEmpty(list))&#123;</span><br><span class="line">                <span class="keyword">return</span> str;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="type">String</span> <span class="variable">s</span> <span class="operator">=</span> list.stream().collect(Collectors.joining(<span class="string">&quot;\n&quot;</span>));</span><br><span class="line">            <span class="keyword">return</span> s;</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            <span class="keyword">return</span> str;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String <span class="title function_">getMdByTemplate</span><span class="params">(String appName,String env,String errorClassName,String msg,String bodyStr)</span>&#123;</span><br><span class="line">        <span class="type">String</span> <span class="variable">titleTpl</span> <span class="operator">=</span> <span class="string">&quot;### 异常告警通知\n#### 应用：%s\n#### 环境：&lt;font color=\&quot;info\&quot;&gt;%s&lt;/font&gt;\n##### 异常：&lt;font color=\&quot;warning\&quot;&gt;%s&lt;/font&gt;\n&quot;</span>;</span><br><span class="line">        <span class="type">String</span> <span class="variable">bodyTpl</span> <span class="operator">=</span> <span class="string">&quot;\nMsg：%s\nDetail：\n&gt;%s&quot;</span>;</span><br><span class="line">        <span class="type">String</span> <span class="variable">footerTpl</span> <span class="operator">=</span> <span class="string">&quot;\n&lt;font color=\&quot;comment\&quot;&gt;%s&lt;/font&gt;&quot;</span>;</span><br><span class="line">        <span class="type">String</span> <span class="variable">title</span> <span class="operator">=</span> String.format(titleTpl, appName, env, errorClassName);</span><br><span class="line">        <span class="type">String</span> <span class="variable">body</span> <span class="operator">=</span> String.format(bodyTpl, msg,bodyStr);</span><br><span class="line">        <span class="type">String</span> <span class="variable">dateStr</span> <span class="operator">=</span> LocalDateTime.now().format(DateTimeFormatter.ofPattern(<span class="string">&quot;yyyy/MM/dd HH:mm:ss&quot;</span>));</span><br><span class="line">        <span class="type">String</span> <span class="variable">footer</span> <span class="operator">=</span> String.format(footerTpl, dateStr);</span><br><span class="line">        <span class="keyword">return</span> title.concat(body).concat(footer);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>使用到的工具方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 限制文本描述</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> content 内容或问题</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> charNumber 长度</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title function_">limitStrNone</span><span class="params">(String content ,<span class="type">int</span> charNumber)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (StringUtils.isNotBlank(content))&#123;</span><br><span class="line">        <span class="keyword">if</span> (content.length() &gt; charNumber)&#123;</span><br><span class="line">            <span class="type">String</span> <span class="variable">substring</span> <span class="operator">=</span> content.substring(<span class="number">0</span>, charNumber);</span><br><span class="line">            <span class="keyword">return</span> substring;</span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> content;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="4-群接收消息的效果"><a href="#4-群接收消息的效果" class="headerlink" title="4.群接收消息的效果"></a>4.群接收消息的效果</h2><img src="/post/SpringBoot%E9%9B%86%E6%88%90%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E7%BE%A4%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88%E8%BF%90%E7%BB%B4%E6%8A%A5%E8%AD%A6%EF%BC%89/2023-01-29-17-53-36.png" class="lazyload" data-srcset="/post/SpringBoot%E9%9B%86%E6%88%90%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E7%BE%A4%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88%E8%BF%90%E7%BB%B4%E6%8A%A5%E8%AD%A6%EF%BC%89/2023-01-29-17-53-36.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class=" lazyload">
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-01-29T10:01:54+00:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2023年1月29日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://xucux.github.io/post/Maven的setting配置属性解析/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Xucux's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Xucux's Blog">
-    <meta itemprop="description" content="一个记录编程知识的小站！">
-  </span>
+          
   
   
   
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Java/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Java</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>企业微信</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/SpringBoot/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>SpringBoot</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%8A%A5%E8%AD%A6/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>报警</p></a></div>
+  <span hidden itemprop="keywords">Java 企业微信 SpringBoot 报警</span>
+  
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://xucux.github.io/post/SpringBoot%E9%9B%86%E6%88%90%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E7%BE%A4%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88%E8%BF%90%E7%BB%B4%E6%8A%A5%E8%AD%A6%EF%BC%89/&title=SpringBoot集成企业微信群机器人（运维报警） - Xucux's Blog&summary=之前有集成过钉钉群机器人🤖报警，这次主要是SpringBoot集成企业微信群机器人报警，主要使用两种方式调用企业微信的HttpApi，一种为Forest，一种为RestTemplate"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://xucux.github.io/post/SpringBoot%E9%9B%86%E6%88%90%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E7%BE%A4%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88%E8%BF%90%E7%BB%B4%E6%8A%A5%E8%AD%A6%EF%BC%89/&title=SpringBoot集成企业微信群机器人（运维报警） - Xucux's Blog&summary=之前有集成过钉钉群机器人🤖报警，这次主要是SpringBoot集成企业微信群机器人报警，主要使用两种方式调用企业微信的HttpApi，一种为Forest，一种为RestTemplate"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://xucux.github.io/post/SpringBoot%E9%9B%86%E6%88%90%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E7%BE%A4%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88%E8%BF%90%E7%BB%B4%E6%8A%A5%E8%AD%A6%EF%BC%89/&title=SpringBoot集成企业微信群机器人（运维报警） - Xucux's Blog&summary=之前有集成过钉钉群机器人🤖报警，这次主要是SpringBoot集成企业微信群机器人报警，主要使用两种方式调用企业微信的HttpApi，一种为Forest，一种为RestTemplate"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/post/Maven%E7%9A%84setting%E9%85%8D%E7%BD%AE%E5%B1%9E%E6%80%A7%E8%A7%A3%E6%9E%90/'>
+          <p class='title'>Maven的setting配置属性解析<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Maven的setting.xml文件解析
+
+
+
+123456789101112131415161718192021222324252627282930313233343536373839404...</p>
+        </a>
+      
+    </div>
+  
+  <!-- 文章推荐 -->
+  
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow" id="comments">
     <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/post/SpringBoot%E9%9B%86%E6%88%90%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E7%BE%A4%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88%E8%BF%90%E7%BB%B4%E6%8A%A5%E8%AD%A6%EF%BC%89/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/post/Maven%E7%9A%84setting%E9%85%8D%E7%BD%AE%E5%B1%9E%E6%80%A7%E8%A7%A3%E6%9E%90/"  itemprop="url">
-        Maven的setting配置属性解析
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>Maven的setting.xml文件解析</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-01-29T17:33:05+08:00">2023-01-29</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/">开发工具</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" itemprop="url"><span itemprop="name">开发工具</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/post/Maven%E7%9A%84setting%E9%85%8D%E7%BD%AE%E5%B1%9E%E6%80%A7%E8%A7%A3%E6%9E%90/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
+    <div id="layoutHelper-comments"></div>
 
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
+
+
+
+
 
 
 </div>
@@ -3105,192 +3172,36 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
   
-    
-    
-      
-<section class="widget blogger desktop mobile ">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>努力活着</h2>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Xucux's Blog</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
 
   
     
     
       
-<section class="widget grid desktop mobile">
-  
-  <header>
     
-      <a target="_blank" rel="noopener" href='https://github.com/volantis-x/hexo-theme-volantis'><i class="fas fa-headset fa-fw" aria-hidden="true"></i><span class='name'>联系开发者</span></a>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="grid navigation fixed">
-      
-        <a class="flat-box" target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/issues/"
-          
-          
-          active-action="action-https:githubcomvolantis-xhexo-theme-volantisissues">
-          
-            <i class="fas fa-bug fa-fw" aria-hidden="true"></i>
-          
-          反馈BUG
-        </a>
-      
-        <a class="flat-box" target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/issues/"
-          
-          
-          active-action="action-https:githubcomvolantis-xhexo-theme-volantisissues">
-          
-            <i class="fas fa-question-circle fa-fw" aria-hidden="true"></i>
-          
-          疑问求助
-        </a>
-      
-        <a class="flat-box" target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/issues/"
-          
-          
-          active-action="action-https:githubcomvolantis-xhexo-theme-volantisissues">
-          
-            <i class="fas fa-lightbulb fa-fw" aria-hidden="true"></i>
-          
-          提个建议
-        </a>
-      
-    </div>
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop">
-    
-  <header>
-    
-      <a href='/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Java/" href="/categories/Java/"
-            active-action="action-categoriesJava"
-            ><div class='name'>Java</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" href="/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"
-            active-action="action-categoriesE5BC80E58F91E5B7A5E585B7"
-            ><div class='name'>开发工具</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile">
-    
-  <header>
-    
-      <a href='/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Java/" style="font-size: 24px; color: #555">Java</a> <a href="/tags/Maven/" style="font-size: 14px; color: #999">Maven</a> <a href="/tags/SpringBoot/" style="font-size: 14px; color: #999">SpringBoot</a> <a href="/tags/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1/" style="font-size: 14px; color: #999">企业微信</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 14px; color: #999">工具</a> <a href="/tags/%E6%8A%A5%E8%AD%A6/" style="font-size: 14px; color: #999">报警</a>
-    </div>
-  </section>
-
-
-    
-  
-
   
 
 
 <div class="widget-sticky">
+
+  
+  
+
+
+<section class="widget toc-wrapper desktop mobile" id="toc-div" >
+  
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+  <div class='content'>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0"><span class="toc-text">1.配置参数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Forest%E7%9A%84Http%E5%AE%A2%E6%88%B7%E7%AB%AF%E9%85%8D%E7%BD%AE"><span class="toc-text">2.Forest的Http客户端配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8Forest"><span class="toc-text">使用Forest</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#POM%E4%BE%9D%E8%B5%96"><span class="toc-text">POM依赖</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#yaml%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE"><span class="toc-text">yaml文件配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%91%E9%80%81%E8%AF%B7%E6%B1%82"><span class="toc-text">发送请求</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%AE%9A%E4%B9%89%E6%9C%8D%E5%8A%A1"><span class="toc-text">3.定义服务</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E6%8E%A5%E5%8F%A3"><span class="toc-text">3.1 接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E6%9C%8D%E5%8A%A1%E5%AE%9E%E7%8E%B0"><span class="toc-text">3.2 服务实现</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E7%BE%A4%E6%8E%A5%E6%94%B6%E6%B6%88%E6%81%AF%E7%9A%84%E6%95%88%E6%9E%9C"><span class="toc-text">4.群接收消息的效果</span></a></li></ol>
+  </div>
+</section>
+
+  
 
 </div>
 
@@ -4386,7 +4297,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xucux's Blog","url":"https://xucux.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"xucux","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xucux.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个记录编程知识的小站！"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xucux.github.io/","name":"Xucux's Blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xucux's Blog","url":"https://xucux.github.io/","keywords":"Java,Web,Vue,SpringBoot,SpringCloud,Golang,Redis,MySQL,前端,后端","description":"一个记录编程知识的小站！","author":{"@type":"Person","name":"xucux","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xucux.github.io/","description":"一个记录编程知识的小站！"},"publisher":{"@type":"Organization","name":"Xucux's Blog","url":"https://xucux.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xucux.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"一个记录编程知识的小站！","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"xucux","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xucux.github.io/"},"publisher":{"@type":"Organization","name":"Xucux's Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Xucux's Blog","url":"https://xucux.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"xucux","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xucux.github.io/","sameAs":["https://github.com/volantis-x"],"description":"一个记录编程知识的小站！"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://xucux.github.io/","name":"Xucux's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://xucux.github.io/archives/","name":"Archive"}},{"@type":"ListItem","position":2,"item":{"@id":"https://xucux.github.io/categories/Java/","name":"Java"}},{"@type":"ListItem","position":3,"item":{"@id":"https://xucux.github.io/post/SpringBoot集成企业微信群机器人（运维报警）/","name":"SpringBoot集成企业微信群机器人（运维报警）"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Xucux's Blog","url":"https://xucux.github.io/","keywords":"Java,Web,Vue,SpringBoot,SpringCloud,Golang,Redis,MySQL,前端,后端","description":"一个记录编程知识的小站！","author":{"@type":"Person","name":"xucux","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xucux.github.io/","description":"一个记录编程知识的小站！"},"publisher":{"@type":"Organization","name":"Xucux's Blog","url":"https://xucux.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://xucux.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"SpringBoot集成企业微信群机器人（运维报警）","description":"之前有集成过钉钉群机器人🤖报警，这次主要是SpringBoot集成企业微信群机器人报警，主要使用两种方式调用企业微信的HttpApi，一种为Forest，一种为RestTemplate","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://xucux.github.io/post/SpringBoot%E9%9B%86%E6%88%90%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E7%BE%A4%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88%E8%BF%90%E7%BB%B4%E6%8A%A5%E8%AD%A6%EF%BC%89/"},"author":{"@type":"Person","name":"xucux","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://xucux.github.io/"},"publisher":{"@type":"Organization","name":"Xucux's Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://xucux.github.io/post/SpringBoot%E9%9B%86%E6%88%90%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E7%BE%A4%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88%E8%BF%90%E7%BB%B4%E6%8A%A5%E8%AD%A6%EF%BC%89/","wordCount":93,"datePublished":"2023-01-29T09:40:50.000Z","dateModified":"2023-01-29T10:01:54.047Z","articleSection":"Java","keywords":"Java,企业微信,SpringBoot,报警","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

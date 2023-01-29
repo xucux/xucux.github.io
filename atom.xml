@@ -6,7 +6,7 @@
   <link href="https://xucux.github.io/atom.xml" rel="self"/>
   
   <link href="https://xucux.github.io/"/>
-  <updated>2023-01-29T09:14:39.975Z</updated>
+  <updated>2023-01-29T10:01:54.047Z</updated>
   <id>https://xucux.github.io/</id>
   
   <author>
@@ -17,23 +17,50 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://xucux.github.io/post/hello-world/"/>
-    <id>https://xucux.github.io/post/hello-world/</id>
-    <published>2023-01-29T09:14:39.975Z</published>
-    <updated>2023-01-29T09:14:39.975Z</updated>
+    <title>SpringBoot集成企业微信群机器人（运维报警）</title>
+    <link href="https://xucux.github.io/post/SpringBoot%E9%9B%86%E6%88%90%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E7%BE%A4%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88%E8%BF%90%E7%BB%B4%E6%8A%A5%E8%AD%A6%EF%BC%89/"/>
+    <id>https://xucux.github.io/post/SpringBoot%E9%9B%86%E6%88%90%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E7%BE%A4%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88%E8%BF%90%E7%BB%B4%E6%8A%A5%E8%AD%A6%EF%BC%89/</id>
+    <published>2023-01-29T09:40:50.000Z</published>
+    <updated>2023-01-29T10:01:54.047Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
+    <summary type="html">&lt;p&gt;之前有集成过钉钉群机器人🤖报警，这次主要是SpringBoot集成企业微信群机器人报警，主要使用两种方式调用企业微信的HttpApi，一种为Forest，一种为RestTemplate&lt;/p&gt;</summary>
     
     
     
+    <category term="Java" scheme="https://xucux.github.io/categories/Java/"/>
+    
+    
+    <category term="Java" scheme="https://xucux.github.io/tags/Java/"/>
+    
+    <category term="企业微信" scheme="https://xucux.github.io/tags/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1/"/>
+    
+    <category term="SpringBoot" scheme="https://xucux.github.io/tags/SpringBoot/"/>
+    
+    <category term="报警" scheme="https://xucux.github.io/tags/%E6%8A%A5%E8%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Maven的setting配置属性解析</title>
+    <link href="https://xucux.github.io/post/Maven%E7%9A%84setting%E9%85%8D%E7%BD%AE%E5%B1%9E%E6%80%A7%E8%A7%A3%E6%9E%90/"/>
+    <id>https://xucux.github.io/post/Maven%E7%9A%84setting%E9%85%8D%E7%BD%AE%E5%B1%9E%E6%80%A7%E8%A7%A3%E6%9E%90/</id>
+    <published>2023-01-29T09:33:05.000Z</published>
+    <updated>2023-01-29T10:01:54.047Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Maven的setting.xml文件解析&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="开发工具" scheme="https://xucux.github.io/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="Java" scheme="https://xucux.github.io/tags/Java/"/>
+    
+    <category term="工具" scheme="https://xucux.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="Maven" scheme="https://xucux.github.io/tags/Maven/"/>
     
   </entry>
   
