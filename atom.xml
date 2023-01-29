@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Xucux的博客</title>
+  <title>Xucux&#39;s Blog</title>
   <icon>https://xucux.github.io/icon.png</icon>
   <subtitle>Xucux的技术分享博客</subtitle>
   <link href="https://xucux.github.io/atom.xml" rel="self"/>
   
   <link href="https://xucux.github.io/"/>
-  <updated>2023-01-29T08:29:33.629Z</updated>
+  <updated>2023-01-29T09:13:37.277Z</updated>
   <id>https://xucux.github.io/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>Hello World</title>
     <link href="https://xucux.github.io/post/hello-world/"/>
     <id>https://xucux.github.io/post/hello-world/</id>
-    <published>2023-01-29T08:29:33.629Z</published>
-    <updated>2023-01-29T08:29:33.629Z</updated>
+    <published>2023-01-29T09:13:37.277Z</published>
+    <updated>2023-01-29T09:13:37.277Z</updated>
     
     
       
