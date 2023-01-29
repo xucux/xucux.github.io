@@ -1,2 +1,9 @@
 https://xucux.github.io/post/hello-world/
+https://xucux.github.io/about/index.html
+https://xucux.github.io/categories/index.html
+https://xucux.github.io/friends/index.html
+https://xucux.github.io/list/index.html
+https://xucux.github.io/tags/index.html
+https://xucux.github.io/more/catchCat/index.html
+https://xucux.github.io/page/messages/index.html
 https://xucux.github.io/
