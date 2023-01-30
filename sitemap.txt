@@ -1,10 +1,10 @@
-https://xucux.github.io/tags/index.html
 https://xucux.github.io/post/Maven%E7%9A%84setting%E9%85%8D%E7%BD%AE%E5%B1%9E%E6%80%A7%E8%A7%A3%E6%9E%90/
 https://xucux.github.io/post/SpringBoot%E9%9B%86%E6%88%90%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E7%BE%A4%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88%E8%BF%90%E7%BB%B4%E6%8A%A5%E8%AD%A6%EF%BC%89/
 https://xucux.github.io/about/index.html
 https://xucux.github.io/categories/index.html
 https://xucux.github.io/friends/index.html
 https://xucux.github.io/list/index.html
+https://xucux.github.io/tags/index.html
 https://xucux.github.io/more/catchCat/index.html
 https://xucux.github.io/page/bookmarks/index.html
 https://xucux.github.io/page/messages/index.html
