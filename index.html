@@ -2241,7 +2241,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1675067638986),
+    lastupdate: new Date(1675067858549),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2249,7 +2249,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       fancybox_js: 'https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/4.0.31/fancybox.umd.min.js'
     },
     sidebar: {
-      for_page: ["blogger","feedback","category","tagcloud","donate"],
+      for_page: ["blogger","feedback","category","tagcloud","donate","webinfo"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -2519,13 +2519,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/artitalk/" title="说说"
+                href="/page/messages/" title="留言"
                   
                   
                   
-                    active-action="action-artitalk"
+                    active-action="action-pagemessages"
                   >
-                  <i class='fas fa-comment-alt faa-vertical fa-fw'></i>说说
+                  <i class='fas fa-comment-alt faa-vertical fa-fw'></i>留言
                 </a>
                 
               </li>
@@ -2570,11 +2570,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                target="_blank" rel="noopener" href="https://x-website.vercel.app/" title="收藏"
+                href="/page/bookmarks/" title="收藏"
                   
                   
                   
-                    active-action="action-https:x-websitevercelapp"
+                    active-action="action-pagebookmarks"
                   >
                   <i class='fas fa-box faa-horizontal faa-reverse fa-fw'></i>收藏
                 </a>
@@ -2776,13 +2776,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                href="/artitalk/" title="说说"
+                href="/page/messages/" title="留言"
                   
                   
                   
-                    active-action="action-artitalk"
+                    active-action="action-pagemessages"
                   >
-                  <i class='fas fa-comment-alt faa-vertical fa-fw'></i>说说
+                  <i class='fas fa-comment-alt faa-vertical fa-fw'></i>留言
                 </a>
                 
               </li>
@@ -2827,11 +2827,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                target="_blank" rel="noopener" href="https://x-website.vercel.app/" title="收藏"
+                href="/page/bookmarks/" title="收藏"
                   
                   
                   
-                    active-action="action-https:x-websitevercelapp"
+                    active-action="action-pagebookmarks"
                   >
                   <i class='fas fa-box faa-horizontal faa-reverse fa-fw'></i>收藏
                 </a>
@@ -3289,6 +3289,67 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   
 
+  
+
+  
+    
+    
+      
+<section class="widget desktop">
+  
+  <header>
+    
+      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <div class="webinfo">
+      
+        <div class="webinfo-item">
+          <div>文章数目：</div>
+          <div>2 篇</div>
+        </div>
+      
+
+      
+
+
+      
+
+      
+        <div class="webinfo-item">
+          <div>本站访客数：</div>
+          <div>
+            <span id="busuanzi_value_site_uv">
+              <i class="fa-solid fa-fan fa-spin fa-fw" aria-hidden="true"></i>
+            </span> 
+            人
+          </div>
+        </div>
+        <div class="webinfo-item">
+          <div>本站总访问量：</div>
+          <div>
+            <span id="busuanzi_value_site_pv">
+              <i class="fa-solid fa-fan fa-spin fa-fw" aria-hidden="true"></i>
+            </span> 
+            次
+          </div>
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>最后活动时间：</div>
+          <div id="last-update-show">2023-01-30 日</div>
+        </div>
+      
+    </div>
+  </div>
+</section>
+
+    
   
 
 
