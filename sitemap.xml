@@ -56,6 +56,15 @@
   </url>
   
   <url>
+    <loc>https://xucux.github.io/more/announcement/index.html</loc>
+    
+    <lastmod>2023-01-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://xucux.github.io/more/catchCat/index.html</loc>
     
     <lastmod>2023-01-31</lastmod>

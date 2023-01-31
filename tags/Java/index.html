@@ -2245,7 +2245,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1675152328648),
+    lastupdate: new Date(1675156832267),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2253,8 +2253,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       fancybox_js: 'https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/4.0.31/fancybox.umd.min.js'
     },
     sidebar: {
-      for_page: ["blogger","clock","feedback","category","tagcloud","donate","webinfo"],
-      for_post: ["clock","toc"],
+      for_page: ["announcement","feedback","category","tagcloud","donate","webinfo"],
+      for_post: ["toc"],
       webinfo: {
         lastupd: {
           enable: true,
@@ -2944,13 +2944,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='md article-desc' itemprop="articleBody">
     
       
-        LocalDate、LocalTime、LocalDateTime的常用API和计算从Java 8开始，java.time包提供了新的日期和时间API，主要涉及的类型有：
+        从Java 8开始，java.time包提供了新的日期和时间API，主要涉及的类型有：
 
 本地日期和时间：LocalDateTime，LocalDate，LocalTime；
 带时区的日期和时间：ZonedDateTime；
 时刻：Instant；
 时区：ZoneId，ZoneOffset；
-时间间隔：Dur...
+时间间隔：Duration。
+
+以及一套新的用于取代SimpleDateFormat的格式化类型Da...
       
     
   </div>
@@ -3131,82 +3133,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile ">
-  <div class='content'>
+<section class="widget text desktop mobile">
+  
+  <header>
     
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
+      <a target="_blank" rel="noopener" href='https://github.com/xucux'><i class="fas fa-bullhorn fa-fw" aria-hidden="true"></i><span class='name'>公告</span></a>
     
-    
-      <div class='text'>
-        
-          <h2>努力活着</h2>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Xucux's Blog</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-  </div>
-</section>
+  </header>
 
-    
-  
-
-  
-    
-    
-      
-<section class="widget page desktop mobile">
-  
 
   <div class='content'>
     
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-        <article id="page" class="post article-type-page" itemscope itemprop="blogPost">
-          <section class="article typo">
-            <div class="article-entry" itemprop="articleBody">
-              
-                <p>测试</p>
+      <p>本站替换了默认右键菜单，唤醒原系统菜单：<strong>Ctrl</strong> + <strong>右键</strong></p>
 
-              
-            </div>
-          </section>
-        </article>
-      
-    
-      
-    
-      
-    
-    
-      
-    
-      
-    
-      
-    
-      
     
   </div>
 </section>
@@ -3222,7 +3161,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <header>
     
-      <a target="_blank" rel="noopener" href='https://github.com/volantis-x/hexo-theme-volantis'><i class="fas fa-headset fa-fw" aria-hidden="true"></i><span class='name'>联系开发者</span></a>
+      <a target="_blank" rel="noopener" href='https://github.com/xucux'><i class="fas fa-headset fa-fw" aria-hidden="true"></i><span class='name'>导航</span></a>
     
   </header>
 
@@ -3230,34 +3169,34 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class='content'>
     <div class="grid navigation fixed">
       
-        <a class="flat-box" target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/issues/"
+        <a class="flat-box" href="/page/messages/"
           
           
-          active-action="action-https:githubcomvolantis-xhexo-theme-volantisissues">
+          active-action="action-pagemessages">
           
-            <i class="fas fa-bug fa-fw" aria-hidden="true"></i>
+            <i class="fas fa-comment-alt fa-fw" aria-hidden="true"></i>
           
-          反馈BUG
+          留言板
         </a>
       
-        <a class="flat-box" target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/issues/"
+        <a class="flat-box" href="/about/"
           
           
-          active-action="action-https:githubcomvolantis-xhexo-theme-volantisissues">
+          active-action="action-about">
           
-            <i class="fas fa-question-circle fa-fw" aria-hidden="true"></i>
+            <i class="fas fa-info-circle fa-fw" aria-hidden="true"></i>
           
-          疑问求助
+          关于
         </a>
       
-        <a class="flat-box" target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/issues/"
+        <a class="flat-box" target="_blank" rel="noopener" href="https://github.com/xucux"
           
           
-          active-action="action-https:githubcomvolantis-xhexo-theme-volantisissues">
+          active-action="action-https:githubcomxucux">
           
-            <i class="fas fa-lightbulb fa-fw" aria-hidden="true"></i>
+            <i class="fab fa-github fa-fw" aria-hidden="true"></i>
           
-          提个建议
+          Github
         </a>
       
     </div>

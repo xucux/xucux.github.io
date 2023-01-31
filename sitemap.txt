@@ -4,6 +4,7 @@ https://xucux.github.io/categories/index.html
 https://xucux.github.io/friends/index.html
 https://xucux.github.io/list/index.html
 https://xucux.github.io/tags/index.html
+https://xucux.github.io/more/announcement/index.html
 https://xucux.github.io/more/catchCat/index.html
 https://xucux.github.io/more/timeclock/index.html
 https://xucux.github.io/page/bookmarks/index.html
