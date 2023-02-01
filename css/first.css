@@ -757,7 +757,7 @@ button {
     --color-card: #262626;
     --color-text: rgba(238,238,238,0.871);
     --color-block: #434343;
-    --color-codeblock: #1f1f1f;
+    --color-codeblock: #434343;
     --color-inlinecode: #d56d28;
     --color-h1: rgba(255,255,255,0.871);
     --color-h2: rgba(255,255,255,0.871);
@@ -829,7 +829,7 @@ button {
   --color-card: #262626;
   --color-text: rgba(238,238,238,0.871);
   --color-block: #434343;
-  --color-codeblock: #1f1f1f;
+  --color-codeblock: #434343;
   --color-inlinecode: #d56d28;
   --color-h1: rgba(255,255,255,0.871);
   --color-h2: rgba(255,255,255,0.871);
