@@ -2246,7 +2246,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1675231806344),
+    lastupdate: new Date(1675243100799),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2271,7 +2271,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       message: {"enable":true,"icon":{"default":"fa-solid fa-info-circle light-blue","quection":"fa-solid fa-question-circle light-blue"},"time":{"default":5000,"quection":20000},"position":"topRight","transitionIn":"bounceInLeft","transitionOut":"fadeOutRight","titleColor":"var(--color-text)","messageColor":"var(--color-text)","backgroundColor":"var(--color-card)","zindex":2147483647,"copyright":{"enable":true,"title":"知识共享许可协议","message":"请遵守 CC BY-NC-SA 4.0 协议。","icon":"far fa-copyright light-blue"},"aplayer":{"enable":true,"play":"fa-solid fa-play","pause":"fa-solid fa-pause"},"rightmenu":{"enable":true,"notice":true}},
       
       aplayer: {
-        id: 3072883579,
+        id: 8427454857,
         enable:true
       },
       
@@ -2451,9 +2451,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         order='list'
         fixed='false'
         list-max-height='320px'
-        server='netease'
+        server='tencent'
         type='playlist'
-        id='3072883579'
+        id='8427454857'
         list-folded='true'>
       </meting-js>
     
@@ -3374,9 +3374,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         order='list'
         fixed='false'
         list-max-height='320px'
-        server='netease'
+        server='tencent'
         type='playlist'
-        id='3072883579'
+        id='8427454857'
         list-folded='true'>
       </meting-js>
     
@@ -4129,7 +4129,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     (async () => {
       // APlayer 需要在  MetingJS 之前加载
       await volantis.js("https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.js")
-      await volantis.js("https://unpkg.com/meting@2/dist/Meting.min.js")
+      await volantis.js("https://gcore.jsdelivr.net/gh/xucux/assets@latest/blog/js/Meting.min.js")
     
       // 右键 music 需要在 APlayer  MetingJS 之后加载
       await volantis.js('/js/plugins/aplayer.js')
@@ -4151,7 +4151,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
               Metings.forEach((item, index) => {
                 const aplayerItem = item.aplayer; if(!aplayerItem) return;
                 const rightAplayerCheck = 'true' === 'true'
-                  && item.meta.id === '3072883579';
+                  && item.meta.id === '8427454857';
                 if(rightAplayerCheck && typeof RightMenuAplayer !="undefined") RightMenuAplayer.checkAPlayer();
                 if(aplayerItem.events.events.play.every(item => {return item.name !== 'messagePlay'})) {
                   aplayerItem.on('play', function messagePlay() {
