@@ -29,12 +29,13 @@
       <meta name="msvalidate.01" content="BBF34646EFB62A378FFF6EE0E48B5268" />
       <meta name="apple-mobile-web-app-title" content="Xucux的博客">
       <meta name="application-name" content="Xucux的博客">
+      <link href="https://cdn.jsdelivr.net/npm/jetbrains-mono@1.0.6/css/jetbrains-mono.min.css" rel="stylesheet">
   <!-- import head_begin end -->
   <!-- Custom Files headBegin begin-->
   
   <!-- Custom Files headBegin end-->
   <link rel="preload" href="/css/style.css" as="style">
-  <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="https://gcore.jsdelivr.net/gh/xucux/assets@latest/font/en/umbasoft-altbold.otf" as="font" type="font/otf" crossorigin="anonymous">
 <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- feed -->
@@ -523,7 +524,7 @@ button {
   margin-top: 32px;
 }
 .cover-wrapper .cover-body .title {
-  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+  font-family: Umbasoft, Baby ground, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
   font-size: 3.125rem;
   line-height: 1.2;
   text-shadow: 0 1px 2px rgba(0,0,0,0.1);
@@ -962,8 +963,8 @@ button {
   font-display: swap;
 }
 @font-face {
-  font-family: 'Varela Round';
-  src: url("https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/VarelaRound/VarelaRound-Regular.ttf");
+  font-family: 'Umbasoft';
+  src: url("https://gcore.jsdelivr.net/gh/xucux/assets@latest/font/en/umbasoft-altbold.otf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -1086,7 +1087,7 @@ button {
   line-height: 64px;
   padding: 0 24px;
   font-size: 1.25rem;
-  font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+  font-family: Umbasoft, Baby ground, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 }
 .l_header #wrapper .nav-main .title img {
   height: 64px;
@@ -2245,7 +2246,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1675220337894),
+    lastupdate: new Date(1675222456897),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -4444,10 +4445,10 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 <script>
 
-  volantis.css("https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/vs2015.min.css");
+  volantis.css("https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.7.0/styles/vs2015.min.css");
 
 
-  volantis.js("https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js").then(()=>{
+  volantis.js("https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.7.0/highlight.min.js").then(()=>{
     volantis.requestAnimationFrame(hljs.highlightAll)
   })
 
