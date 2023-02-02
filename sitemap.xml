@@ -65,6 +65,15 @@
   </url>
   
   <url>
+    <loc>https://xucux.github.io/post/LocalDate%E3%80%81LocalTime%E3%80%81LocalDateTime%E7%9A%84%E5%B8%B8%E7%94%A8API%E5%92%8C%E8%AE%A1%E7%AE%97/</loc>
+    
+    <lastmod>2023-02-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://xucux.github.io/post/Maven%E7%9A%84setting%E9%85%8D%E7%BD%AE%E5%B1%9E%E6%80%A7%E8%A7%A3%E6%9E%90/</loc>
     
     <lastmod>2023-02-02</lastmod>
@@ -111,15 +120,6 @@
   
   <url>
     <loc>https://xucux.github.io/friends/index.html</loc>
-    
-    <lastmod>2023-02-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xucux.github.io/post/LocalDate%E3%80%81LocalTime%E3%80%81LocalDateTime%E7%9A%84%E5%B8%B8%E7%94%A8API%E5%92%8C%E8%AE%A1%E7%AE%97/</loc>
     
     <lastmod>2023-02-02</lastmod>
     
