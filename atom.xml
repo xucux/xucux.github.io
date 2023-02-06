@@ -6,7 +6,7 @@
   <link href="https://xucux.github.io/atom.xml" rel="self"/>
   
   <link href="https://xucux.github.io/"/>
-  <updated>2023-02-04T14:58:29.537Z</updated>
+  <updated>2023-02-06T05:36:18.358Z</updated>
   <id>https://xucux.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>部署音乐API Meting</title>
+    <link href="https://xucux.github.io/posts/137d3ccf/"/>
+    <id>https://xucux.github.io/posts/137d3ccf/</id>
+    <published>2023-02-06T03:27:34.000Z</published>
+    <updated>2023-02-06T05:36:18.358Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;原版的接口有时候不太稳定，不是SSL证书过期，就是网关拦截，这里使用作者xizeyoupan的仓库，自己部署到Vercel了&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="搭建" scheme="https://xucux.github.io/categories/%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="博客" scheme="https://xucux.github.io/categories/%E6%90%AD%E5%BB%BA/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="Api" scheme="https://xucux.github.io/tags/Api/"/>
+    
+    <category term="Docker" scheme="https://xucux.github.io/tags/Docker/"/>
+    
+    <category term="Vercel" scheme="https://xucux.github.io/tags/Vercel/"/>
+    
+    <category term="APlayer" scheme="https://xucux.github.io/tags/APlayer/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用git branch命令在指定的commit id点创建分支</title>
-    <link href="https://xucux.github.io/post/%E4%BD%BF%E7%94%A8git-branch%E5%91%BD%E4%BB%A4%E5%9C%A8%E6%8C%87%E5%AE%9A%E7%9A%84commit-id%E7%82%B9%E5%88%9B%E5%BB%BA%E5%88%86%E6%94%AF/"/>
-    <id>https://xucux.github.io/post/%E4%BD%BF%E7%94%A8git-branch%E5%91%BD%E4%BB%A4%E5%9C%A8%E6%8C%87%E5%AE%9A%E7%9A%84commit-id%E7%82%B9%E5%88%9B%E5%BB%BA%E5%88%86%E6%94%AF/</id>
+    <link href="https://xucux.github.io/posts/f63e905d/"/>
+    <id>https://xucux.github.io/posts/f63e905d/</id>
     <published>2023-01-31T05:42:30.000Z</published>
-    <updated>2023-02-04T14:58:29.537Z</updated>
+    <updated>2023-02-06T05:36:18.358Z</updated>
     
     
       
@@ -50,10 +77,10 @@
   
   <entry>
     <title>LocalDate、LocalTime、LocalDateTime的常用API和计算</title>
-    <link href="https://xucux.github.io/post/LocalDate%E3%80%81LocalTime%E3%80%81LocalDateTime%E7%9A%84%E5%B8%B8%E7%94%A8API%E5%92%8C%E8%AE%A1%E7%AE%97/"/>
-    <id>https://xucux.github.io/post/LocalDate%E3%80%81LocalTime%E3%80%81LocalDateTime%E7%9A%84%E5%B8%B8%E7%94%A8API%E5%92%8C%E8%AE%A1%E7%AE%97/</id>
+    <link href="https://xucux.github.io/posts/8f766de6/"/>
+    <id>https://xucux.github.io/posts/8f766de6/</id>
     <published>2023-01-31T05:29:56.000Z</published>
-    <updated>2023-02-04T14:58:29.533Z</updated>
+    <updated>2023-02-06T05:36:18.354Z</updated>
     
     
       
@@ -79,10 +106,10 @@
   
   <entry>
     <title>SpringBoot集成企业微信群机器人（运维报警）</title>
-    <link href="https://xucux.github.io/post/SpringBoot%E9%9B%86%E6%88%90%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E7%BE%A4%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88%E8%BF%90%E7%BB%B4%E6%8A%A5%E8%AD%A6%EF%BC%89/"/>
-    <id>https://xucux.github.io/post/SpringBoot%E9%9B%86%E6%88%90%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E7%BE%A4%E6%9C%BA%E5%99%A8%E4%BA%BA%EF%BC%88%E8%BF%90%E7%BB%B4%E6%8A%A5%E8%AD%A6%EF%BC%89/</id>
+    <link href="https://xucux.github.io/posts/7160ab8a/"/>
+    <id>https://xucux.github.io/posts/7160ab8a/</id>
     <published>2023-01-29T09:40:50.000Z</published>
-    <updated>2023-02-04T14:58:29.533Z</updated>
+    <updated>2023-02-06T05:36:18.354Z</updated>
     
     
     <summary type="html">&lt;p&gt;之前有集成过钉钉群机器人🤖报警，这次主要是SpringBoot集成企业微信群机器人报警，主要使用两种方式调用企业微信的HttpApi，一种为Forest，一种为RestTemplate&lt;/p&gt;</summary>
@@ -104,10 +131,10 @@
   
   <entry>
     <title>Maven的setting配置属性解析</title>
-    <link href="https://xucux.github.io/post/Maven%E7%9A%84setting%E9%85%8D%E7%BD%AE%E5%B1%9E%E6%80%A7%E8%A7%A3%E6%9E%90/"/>
-    <id>https://xucux.github.io/post/Maven%E7%9A%84setting%E9%85%8D%E7%BD%AE%E5%B1%9E%E6%80%A7%E8%A7%A3%E6%9E%90/</id>
+    <link href="https://xucux.github.io/posts/636cc5f5/"/>
+    <id>https://xucux.github.io/posts/636cc5f5/</id>
     <published>2023-01-29T09:33:05.000Z</published>
-    <updated>2023-02-04T14:58:29.533Z</updated>
+    <updated>2023-02-06T05:36:18.354Z</updated>
     
     
     <summary type="html">&lt;p&gt;Maven的setting.xml文件解析&lt;/p&gt;</summary>
