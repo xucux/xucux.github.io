@@ -65,51 +65,6 @@
   </url>
   
   <url>
-    <loc>https://xucux.github.io/posts/8f766de6/</loc>
-    
-    <lastmod>2023-02-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xucux.github.io/posts/636cc5f5/</loc>
-    
-    <lastmod>2023-02-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xucux.github.io/posts/7160ab8a/</loc>
-    
-    <lastmod>2023-02-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xucux.github.io/posts/f63e905d/</loc>
-    
-    <lastmod>2023-02-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xucux.github.io/posts/137d3ccf/</loc>
-    
-    <lastmod>2023-02-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://xucux.github.io/about/index.html</loc>
     
     <lastmod>2023-02-06</lastmod>
@@ -129,6 +84,51 @@
   
   <url>
     <loc>https://xucux.github.io/friends/index.html</loc>
+    
+    <lastmod>2023-02-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xucux.github.io/post/8f766de6/</loc>
+    
+    <lastmod>2023-02-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xucux.github.io/post/636cc5f5/</loc>
+    
+    <lastmod>2023-02-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xucux.github.io/post/7160ab8a/</loc>
+    
+    <lastmod>2023-02-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xucux.github.io/post/f63e905d/</loc>
+    
+    <lastmod>2023-02-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xucux.github.io/post/137d3ccf/</loc>
     
     <lastmod>2023-02-06</lastmod>
     
