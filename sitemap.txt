@@ -5,14 +5,14 @@ https://xucux.github.io/more/catchCat/index.html
 https://xucux.github.io/more/timeclock/index.html
 https://xucux.github.io/page/bookmarks/index.html
 https://xucux.github.io/page/messages/index.html
-https://xucux.github.io/about/index.html
-https://xucux.github.io/categories/index.html
-https://xucux.github.io/friends/index.html
 https://xucux.github.io/post/8f766de6/
 https://xucux.github.io/post/636cc5f5/
 https://xucux.github.io/post/7160ab8a/
 https://xucux.github.io/post/f63e905d/
 https://xucux.github.io/post/137d3ccf/
+https://xucux.github.io/about/index.html
+https://xucux.github.io/categories/index.html
+https://xucux.github.io/friends/index.html
 https://xucux.github.io/
 https://xucux.github.io/tags/Java/
 https://xucux.github.io/tags/LocalDateTime/
@@ -30,7 +30,7 @@ https://xucux.github.io/tags/APlayer/
 https://xucux.github.io/categories/Java/
 https://xucux.github.io/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/
 https://xucux.github.io/categories/Java/java-time%E5%8C%85/
+https://xucux.github.io/categories/%E6%90%AD%E5%BB%BA/
 https://xucux.github.io/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Maven/
 https://xucux.github.io/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git/
-https://xucux.github.io/categories/%E6%90%AD%E5%BB%BA/
 https://xucux.github.io/categories/%E6%90%AD%E5%BB%BA/%E5%8D%9A%E5%AE%A2/
