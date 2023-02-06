@@ -5,14 +5,14 @@ https://xucux.github.io/more/catchCat/index.html
 https://xucux.github.io/more/timeclock/index.html
 https://xucux.github.io/page/bookmarks/index.html
 https://xucux.github.io/page/messages/index.html
+https://xucux.github.io/posts/8f766de6/
+https://xucux.github.io/posts/636cc5f5/
+https://xucux.github.io/posts/7160ab8a/
 https://xucux.github.io/posts/f63e905d/
 https://xucux.github.io/posts/137d3ccf/
 https://xucux.github.io/about/index.html
 https://xucux.github.io/categories/index.html
 https://xucux.github.io/friends/index.html
-https://xucux.github.io/posts/8f766de6/
-https://xucux.github.io/posts/636cc5f5/
-https://xucux.github.io/posts/7160ab8a/
 https://xucux.github.io/
 https://xucux.github.io/tags/Java/
 https://xucux.github.io/tags/LocalDateTime/
