@@ -6,7 +6,7 @@
   <link href="https://xucux.github.io/atom.xml" rel="self"/>
   
   <link href="https://xucux.github.io/"/>
-  <updated>2023-02-06T05:52:47.496Z</updated>
+  <updated>2023-02-06T06:03:57.069Z</updated>
   <id>https://xucux.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://xucux.github.io/post/137d3ccf/"/>
     <id>https://xucux.github.io/post/137d3ccf/</id>
     <published>2023-02-05T03:27:34.000Z</published>
-    <updated>2023-02-06T05:52:47.496Z</updated>
+    <updated>2023-02-06T06:03:57.069Z</updated>
     
     
     <summary type="html">&lt;p&gt;原版的接口有时候不太稳定，不是SSL证书过期，就是网关拦截，这里使用作者xizeyoupan的仓库，自己部署到Vercel了&lt;/p&gt;</summary>
@@ -48,7 +48,7 @@
     <link href="https://xucux.github.io/post/f63e905d/"/>
     <id>https://xucux.github.io/post/f63e905d/</id>
     <published>2023-01-31T05:42:30.000Z</published>
-    <updated>2023-02-06T05:52:47.496Z</updated>
+    <updated>2023-02-06T06:03:57.069Z</updated>
     
     
       
@@ -80,7 +80,7 @@
     <link href="https://xucux.github.io/post/8f766de6/"/>
     <id>https://xucux.github.io/post/8f766de6/</id>
     <published>2023-01-31T05:29:56.000Z</published>
-    <updated>2023-02-06T05:52:47.496Z</updated>
+    <updated>2023-02-06T06:03:57.065Z</updated>
     
     
       
@@ -109,7 +109,7 @@
     <link href="https://xucux.github.io/post/7160ab8a/"/>
     <id>https://xucux.github.io/post/7160ab8a/</id>
     <published>2023-01-29T09:40:50.000Z</published>
-    <updated>2023-02-06T05:52:47.496Z</updated>
+    <updated>2023-02-06T06:03:57.065Z</updated>
     
     
     <summary type="html">&lt;p&gt;之前有集成过钉钉群机器人🤖报警，这次主要是SpringBoot集成企业微信群机器人报警，主要使用两种方式调用企业微信的HttpApi，一种为Forest，一种为RestTemplate&lt;/p&gt;</summary>
@@ -134,7 +134,7 @@
     <link href="https://xucux.github.io/post/636cc5f5/"/>
     <id>https://xucux.github.io/post/636cc5f5/</id>
     <published>2023-01-29T09:33:05.000Z</published>
-    <updated>2023-02-06T05:52:47.496Z</updated>
+    <updated>2023-02-06T06:03:57.065Z</updated>
     
     
     <summary type="html">&lt;p&gt;Maven的setting.xml文件解析&lt;/p&gt;</summary>
