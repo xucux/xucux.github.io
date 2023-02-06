@@ -260,13 +260,6 @@
   </url>
   
   <url>
-    <loc>https://xucux.github.io/categories/%E6%90%AD%E5%BB%BA/</loc>
-    <lastmod>2023-02-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://xucux.github.io/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Maven/</loc>
     <lastmod>2023-02-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -275,6 +268,13 @@
   
   <url>
     <loc>https://xucux.github.io/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git/</loc>
+    <lastmod>2023-02-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xucux.github.io/categories/%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2023-02-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

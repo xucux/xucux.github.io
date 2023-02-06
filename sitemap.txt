@@ -30,7 +30,7 @@ https://xucux.github.io/tags/APlayer/
 https://xucux.github.io/categories/Java/
 https://xucux.github.io/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/
 https://xucux.github.io/categories/Java/java-time%E5%8C%85/
-https://xucux.github.io/categories/%E6%90%AD%E5%BB%BA/
 https://xucux.github.io/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Maven/
 https://xucux.github.io/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/Git/
+https://xucux.github.io/categories/%E6%90%AD%E5%BB%BA/
 https://xucux.github.io/categories/%E6%90%AD%E5%BB%BA/%E5%8D%9A%E5%AE%A2/
