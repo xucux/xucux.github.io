@@ -2360,7 +2360,7 @@ img.lazyload:not(.placeholder).loaded {
   position: relative;
   pointer-events: none;
   margin-top: 0;
-  font-weight: 500;
+  font-weight: bold !important;
 }
 .md h1 >a,
 .md h2 >a,
